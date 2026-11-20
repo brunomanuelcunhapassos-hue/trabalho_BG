@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Métodos barreira</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+
+    <header class="menu">
+    <h1>Métodos Contracetivos</h1>
+
+    <nav>
+        <a href="Metodos_barreira.html" class="">Introdução</a>
+        <a href="perservativoh.html">Perservativo Masculino</a>
+        <a href="perservativom.html">Perservativo Feminino</a>
+        <a href="diafragma.html">Diafragma</a>
+        <a href="capuzcervical.html">Capuz Cervical</a>
+        <a href="esponjacontracetiva.html">Esponja Contracetiva</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<p></p>
+
+<section class="desafio" id="desafio">
+
+    <div class="cabecalho-desafio">
+        <span class="etiqueta-desafio">TESTA OS TEUS CONHECIMENTOS</span>
+        <h2>Desafio dos Métodos Contracetivos</h2>
+        <p>
+            Será que consegues identificar todos os métodos?
+            Lê as pistas e escolhe a resposta correta!
+        </p>
+    </div>
+
+    <div class="jogo">
+
+        <div class="progresso">
+            <span id="numero-pergunta">Pergunta 1 de 5</span>
+            <span id="pontuacao">Pontuação: 0</span>
+        </div>
+
+        <div class="barra-progresso">
+            <div id="progresso-preenchido"></div>
+        </div>
+
+        <div class="pergunta">
+            <span class="icone-pergunta">?</span>
+
+            <h3 id="pergunta-texto">Quem sou eu?</h3>
+
+            <p id="pista">
+                Sou um método contracetivo que cobre o colo
+                do útero e é geralmente utilizado com espermicida.
+            </p>
+        </div>
+
+        <div class="respostas" id="respostas">
+
+            <button class="opcao" onclick="verificarResposta(0)">
+                Preservativo masculino
+            </button>
+
+            <button class="opcao" onclick="verificarResposta(1)">
+                Diafragma
+            </button>
+
+            <button class="opcao" onclick="verificarResposta(2)">
+                Esponja contracetiva
+            </button>
+
+            <button class="opcao" onclick="verificarResposta(3)">
+                Preservativo feminino
+            </button>
+
+        </div>
+
+        <div id="feedback"></div>
+
+        <button id="botao-proximo" onclick="proximaPergunta()" disabled>
+            Próxima pergunta →
+        </button>
+
+        <div id="resultado-final"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</section>
+

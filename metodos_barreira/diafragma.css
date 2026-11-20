@@ -1,0 +1,354 @@
+body {
+    background: linear-gradient(to bottom, #b7f7c1, #006400);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #064e24;
+    color: white;
+
+    padding: 15px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+.menu h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu nav a:hover {
+    color: #a8ffb0;
+}
+
+
+/* SECÇÃO PRINCIPAL */
+
+.preservativo {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 30px;
+    color: #244b30;
+}
+
+/* CABEÇALHO */
+
+.cabecalho-metodo {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #d4f2d9;
+    color: #087a35;
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cabecalho-metodo h2 {
+    font-size: 48px;
+    color: #064e24;
+    margin: 20px 0 10px;
+}
+
+.cabecalho-metodo p {
+    font-size: 18px;
+    color: #42664a;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,60,20,0.10);
+    margin-bottom: 60px;
+}
+
+.imagem-preservativo {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem-preservativo img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.imagem-preservativo span {
+    display: block;
+    color: #087a35;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+}
+
+.texto-apresentacao {
+    flex: 1.3;
+}
+
+.texto-apresentacao h3 {
+    font-size: 30px;
+    color: #087a35;
+}
+
+.texto-apresentacao p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #49634d;
+}
+
+/* GRELHA DE INFORMAÇÕES */
+
+.informacoes {
+    margin-bottom: 65px;
+}
+
+.titulo-centro {
+    text-align: center;
+    font-size: 32px;
+    color: #064e24;
+    margin-bottom: 30px;
+}
+
+.grelha-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cartao-info {
+    background: rgba(255,255,255,0.85);
+    padding: 25px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,60,20,0.08);
+    transition: 0.3s;
+}
+
+.cartao-info:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,60,20,0.15);
+}
+
+.icone {
+    font-size: 35px;
+}
+
+.cartao-info h4 {
+    color: #087a35;
+    font-size: 19px;
+}
+
+.cartao-info p {
+    color: #526b57;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* UTILIZAÇÃO */
+
+.utilizacao {
+    background: #e5f5e7;
+    border-left: 6px solid #26964b;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+.texto-utilizacao h3 {
+    font-size: 30px;
+    color: #064e24;
+}
+
+.texto-utilizacao p {
+    line-height: 1.8;
+}
+
+.texto-utilizacao ol {
+    padding-left: 25px;
+}
+
+.texto-utilizacao li {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* VANTAGENS E DESVANTAGENS */
+
+.comparacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.vantagens,
+.desvantagens {
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,60,20,0.08);
+}
+
+.vantagens {
+    border-top: 5px solid #26964b;
+}
+
+.desvantagens {
+    border-top: 5px solid #d69b45;
+}
+
+.vantagens h3 {
+    color: #087a35;
+}
+
+.desvantagens h3 {
+    color: #a66b19;
+}
+
+.comparacao li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* CURIOSIDADE */
+
+.curiosidade {
+    background: linear-gradient(120deg, #087a35, #064e24);
+    color: white;
+    padding: 40px;
+    border-radius: 22px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.curiosidade span {
+    color: #b7f7c1;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.curiosidade h3 {
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+.curiosidade p {
+    color: #d8f0dc;
+    line-height: 1.8;
+}
+
+/* NOTA FINAL */
+
+.nota {
+    text-align: center;
+    color: #55765b;
+    font-size: 13px;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+
+    .grelha-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .comparacao {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho-metodo h2 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .grelha-info {
+        grid-template-columns: 1fr;
+    }
+
+    .preservativo {
+        padding: 15px;
+    }
+
+    .apresentacao,
+    .utilizacao {
+        padding: 22px;
+    }
+
+}
+
+.nota{
+    text-align: center;
+    color: #55765b;
+    font-size: 13px;
+    padding: 20px;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* AJUSTE DA IMAGEM DO DIAFRAGMA */
+
+#diafragma .imagem-preservativo img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 18px;
+    object-fit: contain;
+    background: white;
+}
+
+/* ESPAÇAMENTO DO MENU FIXO */
+
+#diafragma {
+    scroll-margin-top: 100px;
+}

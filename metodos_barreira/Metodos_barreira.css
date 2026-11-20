@@ -1,0 +1,98 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #064e24;
+    color: white;
+
+    padding: 15px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+.menu h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu nav a:hover {
+    color: #a8ffb0;
+}
+
+body {
+    background: linear-gradient(to bottom, #b7f7c1, #006400);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.introducao {
+    text-align: center;
+    padding: 85px 15%;
+    margin: 40px auto;
+    max-width: 900px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 60, 20, 0.12);
+}
+
+.subtitulo {
+    color: #39834c;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.introducao h1 {
+    color: #064e24;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.introducao h1 span {
+    color: #26964b;
+    display: block;
+}
+
+.descricao {
+    color: #355b40;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.linha-decorativa {
+    width: 90px;
+    height: 4px;
+    background: #26964b;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+.frase-final {
+    color: #087a35;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}

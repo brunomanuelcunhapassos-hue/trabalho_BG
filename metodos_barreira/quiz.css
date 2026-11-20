@@ -1,0 +1,284 @@
+body {
+    background: linear-gradient(to bottom, #b7f7c1, #006400);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #064e24;
+    color: white;
+
+    padding: 15px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+.menu h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu nav a:hover {
+    color: #a8ffb0;
+}
+
+/* SECÇÃO DO DESAFIO */
+
+.desafio {
+    padding: 80px 10%;
+    background: linear-gradient(to bottom, #eaffed, #ffffff);
+    scroll-margin-top: 100px;
+}
+
+.cabecalho-desafio {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.etiqueta-desafio {
+    color: #16803c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cabecalho-desafio h2 {
+    font-size: 36px;
+    color: #14532d;
+    margin: 15px 0;
+}
+
+.cabecalho-desafio p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* CARTÃO DO JOGO */
+
+.jogo {
+    max-width: 750px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 80, 30, 0.12);
+}
+
+/* PROGRESSO */
+
+.progresso {
+    display: flex;
+    justify-content: space-between;
+    color: #286b3c;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 10px;
+    background-color: #e1f2e4;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+#progresso-preenchido {
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(to right, #80d994, #16803c);
+    border-radius: 20px;
+    transition: width 0.4s;
+}
+
+/* PERGUNTA */
+
+.pergunta {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icone-pergunta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #d9fbe0;
+    color: #16803c;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pergunta h3 {
+    color: #14532d;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.pergunta p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* RESPOSTAS */
+
+.respostas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.opcao {
+    padding: 18px;
+    background-color: #f5fbf6;
+    border: 2px solid #d9eadc;
+    border-radius: 12px;
+    color: #245b34;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opcao:hover:not(:disabled) {
+    background-color: #dff7e4;
+    border-color: #26964a;
+    transform: translateY(-3px);
+}
+
+.opcao:disabled {
+    cursor: default;
+}
+
+.opcao.correta {
+    background-color: #d5f5dc;
+    border-color: #26964a;
+    color: #14532d;
+}
+
+.opcao.errada {
+    background-color: #ffe1e1;
+    border-color: #d9534f;
+    color: #9b2525;
+}
+
+/* FEEDBACK */
+
+#feedback {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 22px;
+    min-height: 25px;
+}
+
+.feedback-correto {
+    color: #16803c;
+}
+
+.feedback-errado {
+    color: #d9534f;
+}
+
+/* BOTÃO PRÓXIMO */
+
+#botao-proximo {
+    display: block;
+    margin: 25px auto 0;
+    padding: 14px 30px;
+    background-color: #16803c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botao-proximo:hover:not(:disabled) {
+    background-color: #0e5728;
+    transform: scale(1.04);
+}
+
+#botao-proximo:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* RESULTADO FINAL */
+
+#resultado-final {
+    text-align: center;
+    margin-top: 25px;
+    color: #14532d;
+}
+
+#resultado-final h3 {
+    font-size: 27px;
+}
+
+#resultado-final p {
+    line-height: 1.7;
+}
+
+#resultado-final button {
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #16803c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* TELEMÓVEIS */
+
+@media (max-width: 600px) {
+
+    .desafio {
+        padding: 55px 5%;
+    }
+
+    .cabecalho-desafio h2 {
+        font-size: 27px;
+    }
+
+    .jogo {
+        padding: 22px;
+    }
+
+    .respostas {
+        grid-template-columns: 1fr;
+    }
+
+    .pergunta h3 {
+        font-size: 22px;
+    }
+
+}
